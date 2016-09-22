@@ -1,0 +1,56 @@
+<acceptance-test-run title="Looking up the definition of &apos;apple&apos;" name="Looking up the definition of &apos;apple&apos;" description="" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="12049" timestamp="2016-09-22T10:05:11.131-04:00" session-id="ad4802f2b46086b60076639b2166dfca">
+  <user-story id="lookup-a-definition" name="Lookup a definition" path="consult_dictionary/LookupADefinition.feature"/>
+  <tags>
+    <tag name="Consult dictionary" type="capability"/>
+    <tag name="Consult dictionary/Lookup a definition" type="feature"/>
+    <tag name="Lookup a definition" type="feature"/>
+  </tags>
+  <test-group name="Given the user is on the Wikionary home page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4c99354036560ad188d852a4a89730c8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="5934">
+      <screenshots>
+        <screenshot image="fdcd9fb9b1358662bf729c00074d305e.png"/>
+      </screenshots>
+      <description>Is the home page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When the user looks up the definition of the word &apos;apple&apos;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="fdcd9fb9b1358662bf729c00074d305e.png"/>
+      <screenshot image="0bdbdbd7a228b3dca48f0baea3280abf.png"/>
+    </screenshots>
+    <test-group name="Looks for: apple" result="SUCCESS">
+      <screenshots>
+        <screenshot image="fdcd9fb9b1358662bf729c00074d305e.png"/>
+        <screenshot image="0bdbdbd7a228b3dca48f0baea3280abf.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="573">
+        <screenshots>
+          <screenshot image="fdcd9fb9b1358662bf729c00074d305e.png"/>
+          <screenshot image="38db5d26332ef53a07e1aba551dd43a2.png"/>
+        </screenshots>
+        <description>Enters: apple</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="1755">
+        <screenshots>
+          <screenshot image="6aef7d02ac1efc98b4f4d6c210136500.png"/>
+          <screenshot image="94afbbc4688e941a0c78ab221eb21e0f.png"/>
+        </screenshots>
+        <description>Starts search</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="Then they should see the definition &apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0bdbdbd7a228b3dca48f0baea3280abf.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="924">
+      <screenshots>
+        <screenshot image="0bdbdbd7a228b3dca48f0baea3280abf.png"/>
+      </screenshots>
+      <description>Should see definition: A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>
